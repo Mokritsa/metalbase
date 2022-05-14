@@ -868,7 +868,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 53px;
+    right: 20px;
     top: 37px;
     transition: 0.3s;
     z-index: 5;
