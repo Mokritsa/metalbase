@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="../../assets/img/favicon.png" type="image/x-icon" />
+  <title>Металлобаза-Север</title>
+</head>
+
+<body class="body">
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <h4 class="logo-content">МЕТАЛЛОБАЗА</h4>
+        <h2 class="logo-title">СЕВЕР</h2>
+      </div>
+      <nav class="nav">
+        <ul class="ul-nav">
+          <li><a class="nav-link is-active" href="#About">О компании</a></li>
+          <li><a class="nav-link" href="#Catalog">Каталог продукции</a></li>
+          <li><a class="nav-link" href="#Delivery">Доставка и оплата</a></li>
+          <li><a class="nav-link" href="#Contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" id="hamburger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="About" class="about">
+      <div class="about-content">
+        <img src="../../assets/img/About.png" alt="About pets" class="image-about" />
+        <div class="about-text-content">
+          <h2 class="about-tittle-text">ООО «Металлобаза-север»</h2>
+          <h3 class="about-text">
+            Крупнейших торгово-складской комплекс Витебска по хранению и
+            переработке металлопродукции. Основной вид деятельности компании -
+            оптовая и розничкая продажа металла.
+          </h3>
+          <h3 class="about-text">
+            На наших складах всегда в наличии наиболее востребованные позиции
+            черного, цветного и нержавеющего металлопроката.
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div id="Catalog" class="catalog">
+      <div class="catalog-content">
+        <h2 class="tittle-catalog">Наша продукция</h2>
+        <div class="slider-wrapper">
+          <button class="btn-left"></button>
+          <div class="slider">
+            <div class="carusel">
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+              <div class="card"></div>
+            </div>
+          </div>
+          <button class="btn-right"></button>
+        </div>
+      </div>
+    </div>
+    <div id="Delivery" class="delivery">
+      <div class="delivery-content">
+        <img src="../../assets/img/5229.eps" alt="delivery" class="delivery-image" />
+        <div class="delivery-text"></div>
+      </div>
+    </div>
+  </main>
+  <footer id="Contacts" class="footer">
+    <div class="footer-container">
+      <div class="footer-contacts">
+        <h2 class="contacts-tittle">Контакты</h2>
+        <div class="mail">
+          <a href="mailto:metallobaza-sever@yandex.by" class="footer-email">metallobaza-sever@yandex.by
+          </a>
+        </div>
+        <div class="phone">
+          <a href="tel:+375298938847" class="footer-phone">+375298938847</a>
+        </div>
+      </div>
+      <div class="footer-locations">
+        <div class="locations-tittle">Наш адресс</div>
+        <a class="footer-link"
+          href="https://yandex.by/maps/154/vitebsk/house/Z0kYdANmSEUCQFtvfX12cnVmYg==/?ll=30.246105%2C55.173957&z=17.01"
+          target="_blank">
+          <div class="first-marker">
+            г.Витебск, ул. П.Бровки, 4а<br />(2 этаж)
+          </div>
+        </a>
+      </div>
+      <div class="footer-image"></div>
+    </div>
+  </footer>
+  <div class="popup" onmouseout="popupIsOut()" onmouseover="popupIsOver()"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
