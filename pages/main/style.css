@@ -307,16 +307,18 @@ nav {
   object-fit: contain;
   order: 1;
 }
-.about-tittle-text {
+.about-tittle-text,
+.delivery-tittle-text {
   font-family: "Georgia";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 35px;
   line-height: 130%;
   color: #545454;
 }
 
-.about-text {
+.about-text,
+.delivery-text {
   text-indent: 30px;
   font-family: "Arial";
   font-style: normal;
@@ -344,7 +346,7 @@ nav {
   width: 400px;
   font-family: "Georgia";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 35px;
   line-height: 130%;
   text-align: center;
@@ -483,18 +485,37 @@ nav {
 }
 .delivery {
   width: 100%;
-  display: none;
   position: relative;
+  display: flex;
   justify-content: center;
-  margin-top: -10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #2d2d2d;
+  background-color: white;
+}
+.delivery-wrapper {
+  display: flex;
+  margin: 10px 20px 20px 20px;
+  justify-content: space-around;
 }
 .delivery-image {
   object-fit: contain;
-  width: 40%;
+  width: 30%;
 }
+.delivery-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 40px;
+}
+.delivery-tittle-text {
+  margin-bottom: 20px;
+}
+.link {
+  text-decoration: none;
+  color: #000000;
+  cursor: pointer;
+}
+
 .footer {
   display: flex;
   position: relative;
@@ -891,6 +912,25 @@ nav {
   }
   .slider {
     width: calc(var(--cards-width) + 2 * var(--cards-margin));
+  }
+  .delivery-wrapper {
+    margin: 0px 20px 0px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .delivery-content {
+    width: 100%;
+    order: -1;
+    margin-bottom: 0px;
+  }
+  .delivery-image {
+    width: 50%;
+  }
+  .delivery-tittle-text {
+    font-size: 25px;
+  }
+  .delivery-text {
+    font-size: 20px;
   }
   .footer-container {
     margin: 0;
