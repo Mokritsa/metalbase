@@ -157,13 +157,13 @@ CARUSEL.addEventListener("animationend", () => {
     CARUSEL.classList.remove("transition-right");
   }
   animationActive = false;
-  console.log("arr of cards = " + arrCardsNumber);
+  //console.log("arr of cards = " + arrCardsNumber);
 });
 // Отрисовка карточек питомцев
 const CARDS = document.querySelectorAll(".card");
 var arrCardsNumber = [];
 for (let i = 0; i < metallArr.length; i++) arrCardsNumber.push(i);
-console.log(arrCardsNumber);
+//console.log(arrCardsNumber);
 drawPets();
 function drawPets() {
   for (let i = 0; i < CARDS.length; i++) {
@@ -209,7 +209,7 @@ document.addEventListener("click", (event) => {
       event.target.classList.contains("btn-popup")
     ) {
       body.classList.remove("no-scroll");
-      console.log(event.target.closest(".popup"));
+      //console.log(event.target.closest(".popup"));
       POPUP.classList.remove("active");
     }
   } else {
